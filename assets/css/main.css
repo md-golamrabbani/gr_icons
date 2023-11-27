@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Gothic+A1&family=Montserrat&family=PT+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #FEFEFE;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+p {
+  margin-top: 0;
+}
+
+h1,
+p {
+  margin-bottom: 1rem;
+}
+
+.download {
+  background-color: #555843;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #F3F3F3;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter .title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.filter .search {
+  border: 1px solid #E3E3E3;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.filter .search:focus,
+.filter .search:active,
+.filter .search:hover {
+  border-color: #E3E3E3;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.grid .icon {
+  padding: 0.5rem;
+  background-color: #F3F3F3;
+  color: #555;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  cursor: pointer;
+}
+
+.grid .icon:hover {
+  background-color: #e6e6e6;
+}
+
+.grid .icon .class_name {
+  margin-top: 0.5rem;
+  font-size: .8125rem;
+  display: none;
+}
+
+.toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 200px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #C7DCA7;
+  color: #555843;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  background-color: #e9ecef;
+  color: #555;
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+/* Media queries for different screen sizes */
+/* SM (Small) screens */
+@media (min-width: 540px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MD (Medium) screens */
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* LG (Large) screens */
+@media (min-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* XL (Extra Large) screens */
+@media (min-width: 1140px) {
+  .grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+/* XXL (Extra Extra Large) screens */
+@media (min-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
