@@ -1,16 +1,16 @@
 /*
- * paper icon
+ * gr icons
  */
 @font-face {
-  font-family: 'paperIcons';
-  src: url('../fonts/paperIcons.woff2') format('woff2');
+  font-family: 'gr_icons';
+  src: url('../fonts/gr_icons.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 [class*=" icon-"],
 [class^="icon-"] {
-  font-family: 'paperIcons' !important;
+  font-family: 'gr_icons' !important;
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
